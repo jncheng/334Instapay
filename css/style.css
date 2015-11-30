@@ -137,6 +137,49 @@ p {
 #checkIn {
 }
 
+#status{
+/*    position: relative;
+*/
+}
+.navbar-fixed {
+    top: 10vh;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+.navbar-relative{
+    position: absolute;
+    left: 4.2%;
+}
+
+.nav2{
+    padding: 0px;
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+.content_process{
+    width: 70vw;
+    position: relative;
+    margin-bottom: 5vh;
+    border: 1px solid #d3d3d3;
+    height: 90vh;
+    left: 25vw;
+}
+#research{
+    top: 10vh;
+}
+
+/*
+@media (min-height: 900px ) { 
+    #status{
+        position: fixed;
+        top: 10vh;
+        left: 5vw;
+    }
+}*/
+
+
 #download {
     font-family: 'CoreCircus-Reg';
     font-size: 1.1em;

@@ -28,3 +28,22 @@ $(function() {
     }
   });
 });
+
+$(document).ready(function() {
+
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 460) {
+      $('#status').addClass('navbar-fixed');
+      $('#status').removeClass('navbar-relative');
+    }
+    if ($(window).scrollTop() < 461) {
+      $('#status').removeClass('navbar-fixed');
+      $('#status').addClass('navbar-relative');
+
+    }
+  });
+});
