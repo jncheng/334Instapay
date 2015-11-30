@@ -104,10 +104,8 @@ p {
     .navbar-default .navbar-nav > li > a:focus {
         color: #6e6f71;
     }
-    
-#header {
-    background-color: #22bab2;
-    background-image: url('../images/cityscape-background.jpg');
+
+.header {
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -115,13 +113,24 @@ p {
     margin: 0;
 }
     .headerCopy {
+        text-align: center;
+        padding-top: 110px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+#mainHeader {
+    background-color: #22bab2;
+    background-image: url('../images/cityscape-background.jpg');
+}
+    .mainHeaderCopy {
         color: #ffffff;
         text-align: center;
         padding-top: 110px;
         width: 50%;
         margin: 0 auto;
     }
-    .headerCopy h1 {
+    .mainHeaderCopy h1 {
         color: #ffffff;
     }
 
@@ -134,8 +143,15 @@ p {
         padding: 0;
     }
 
-#checkIn {
+#processHeader {
+    background-image: url('');
 }
+    .processHeaderCopy {
+        color: #000;
+    }
+    .processHeaderCopy h1 {
+        color: #000;
+    }
 
 #status{
 /*    position: relative;
@@ -162,7 +178,7 @@ p {
     width: 70vw;
     position: relative;
     margin-bottom: 5vh;
-    border: 1px solid #d3d3d3;
+    border-left: 1px solid #eeeeee;
     height: 90vh;
     left: 25vw;
 }
