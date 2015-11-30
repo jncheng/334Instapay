@@ -48,6 +48,8 @@ p {
     line-height: 1.5em;
     padding-bottom: 10px
 }
+
+
 #processHeader {
         background-color: #22bab2;
 
@@ -89,15 +91,24 @@ p {
     font-size: 1em;
 }
 
+.guidingPrinciples{
+    position: relative;
+    display: block;
+    width: 40vw;
+    margin: 3vw 8vw;
+    
+}
+
 .content_process{
-        margin: 0px;
+    margin: 0px;
 
     width: 67vw;
     position: relative;
     display: inline-block;
     margin-bottom: 5vh;
 /*    border: 1px solid #eeeeee;
-*/    height: 80vh;
+*/    
+    /*height: 80vh;*/
     left: 18vw;
     margin-left: 0px;
     padding: 0px;
@@ -106,14 +117,38 @@ p {
         margin-top: 5vh;
 
 }
-
-.2col{
+.principles_h3{
     position: relative;
     display: inline-block;
-    width: 30vw;
-    border: 1px solid black;
-    height: 30vh;
+    width: 20vw;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3.5vw;
+    vertical-align: top;
+}
+.imageSketches{
+    width: 60vw;
+    height: 30vw;
+}
+.imageSketches{
+    background-image: url();
+}
+.iconSecurity, .iconTolerance, .iconFeedback, .iconProgression{
+    margin-top: 2em;
+    position: relative;
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    background-color: black;
+}
 
+.col2{
+    position: relative;
+    display: inline-block;
+    width: 29vw;
+    height: 30vh;
+    vertical-align: top;
+    margin: 2vw;
 }
 .row {
     padding: 0 80px;
@@ -125,6 +160,12 @@ p {
     padding: 0px;
     margin: 0px;
     margin-bottom: 1em;
+}
+.h2big{
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 5em;
+    margin-left: 2vw;
 }
 
 .no-gutter > [class*='col-'] {
