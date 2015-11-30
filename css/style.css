@@ -48,7 +48,73 @@ p {
     line-height: 1.5em;
     padding-bottom: 10px
 }
+#processHeader {
+        background-color: #22bab2;
 
+    background-image: url('');
+}
+    .processHeaderCopy {
+        color: #000;
+                text-align: center;
+        padding-top: 110px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .processHeaderCopy h1 {
+        color: #000;
+    }
+
+#status{
+        border-right: 1px solid #d3d3d3;
+        width: 12vw;
+        left: 4.2vw;
+        padding-bottom: 4vh;
+/*    position: relative;
+*/
+}
+.navbar-fixed {
+    top: 10vh;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+.navbar-relative{
+    position: absolute;
+    left: 4.2%;
+}
+
+.nav2{
+    padding: 0px;
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+.content_process{
+        margin: 0px;
+
+    width: 67vw;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5vh;
+/*    border: 1px solid #eeeeee;
+*/    height: 80vh;
+    left: 18vw;
+    margin-left: 0px;
+    padding: 0px;
+}
+#research{
+        margin-top: 5vh;
+
+}
+
+.2col{
+    position: relative;
+    display: inline-block;
+    width: 30vw;
+    border: 1px solid black;
+    height: 30vh;
+
+}
 .row {
     padding: 0 80px;
 }
@@ -58,6 +124,7 @@ p {
     width: 50%;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 1em;
 }
 
 .no-gutter > [class*='col-'] {
@@ -150,64 +217,7 @@ p {
         padding: 0;
     }
 
-#processHeader {
-        background-color: #22bab2;
 
-    background-image: url('');
-}
-    .processHeaderCopy {
-        color: #000;
-                text-align: center;
-        padding-top: 110px;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .processHeaderCopy h1 {
-        color: #000;
-    }
-
-#status{
-        border-right: 1px solid #d3d3d3;
-        width: 12vw;
-        left: 4.2vw;
-        padding-bottom: 4vh;
-/*    position: relative;
-*/
-}
-.navbar-fixed {
-    top: 10vh;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-}
-.navbar-relative{
-    position: absolute;
-    left: 4.2%;
-}
-
-.nav2{
-    padding: 0px;
-    margin-bottom: 0px;
-    font-size: 1em;
-}
-
-.content_process{
-        margin: 0px;
-
-    width: 77vw;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5vh;
-/*    border: 1px solid #eeeeee;
-*/    height: 80vh;
-    left: 18vw;
-    margin-left: 0px;
-    padding: 0px;
-}
-#research{
-        margin-top: 5vh;
-
-}
 
 /*
 @media (min-height: 900px ) { 
