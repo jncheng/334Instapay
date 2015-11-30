@@ -40,7 +40,7 @@ h2 {
     font-family: 'CoreCircus-Reg';
     font-size: 1.5em;
     color: #22bab2;
-    padding: 40px 0 10px;
+    padding: 50px 0 10px;
 }
 
 p {
@@ -51,6 +51,11 @@ p {
 
 .row {
     padding: 0 80px;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
 }
 
 .btn-primary {
