@@ -204,7 +204,6 @@ p {
     display: inline-block;
     width: 5vw;
     height: 5vw;
-    background-color: black;
     background-size: 100% 100%;
 }
 .iconSecurity{
@@ -223,7 +222,7 @@ p {
     background-image: url('../images/icons/iconUsers.png');
 }
 .iconMethods{
-    background-image: url('../images/icons/iconMethods.png');
+    background-image: url('../images/icons/iconStudy.png');
 }
 .iconIssues{
     background-image: url('../images/icons/iconIssues.png');
@@ -254,6 +253,10 @@ p {
     margin-left: 0px;
     padding: 0px;
 }
+.scrollPosition{
+    color: #36a5a2;
+    font-size: 1.2em;
+}
 @media(max-width: 750px){
     .content_process{
         left: 175px;
@@ -283,6 +286,10 @@ p {
     .content_process{
         width: 90%;
         left: 5%;
+    }
+    .scrollPosition{
+    color: #ffffff;
+    font-size: 1em;
     }
     .imageJourner, .imageWireframe1, .imageWireframe2, .imageWireframe3, .imageWireframe4
 , .imageWireframe5, .imageWireframe6, .imageWireframe7, .imageWireframe8, .imageWireframe9, .imageWireframe10, 

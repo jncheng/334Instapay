@@ -56,3 +56,76 @@ $(document).ready(function() {
     }
   });
 });
+
+// function isScrolledIntoView(elem)
+// {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+//     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }
+
+function isScrolledIntoView(elem)
+{
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+$(window).scroll(function() {    
+    if(isScrolledIntoView($('#research')))
+    {
+      $('#nav_designGuide').removeClass('scrollPosition');
+      $('#nav_research').addClass('scrollPosition'); 
+    }   
+    else if(isScrolledIntoView($('#designGuide')))
+    {
+      $('#nav_designGuide').addClass('scrollPosition'); 
+      $('#nav_research').removeClass('scrollPosition');
+      $('#nav_userFlow').removeClass('scrollPosition');
+
+    }   
+    else if(isScrolledIntoView($('#userFlow')))
+    {
+      $('#nav_userFlow').addClass('scrollPosition'); 
+      $('#nav_designGuide').removeClass('scrollPosition');
+      $('#nav_sketches').removeClass('scrollPosition');
+    }   
+    else if(isScrolledIntoView($('#sketches')))
+    {
+      $('#nav_sketches').addClass('scrollPosition'); 
+      $('#nav_userFlow').removeClass('scrollPosition');
+      $('#nav_wireframes').removeClass('scrollPosition');
+    }   
+    else if(isScrolledIntoView($('#wireframes')))
+    {
+      $('#nav_wireframes').addClass('scrollPosition'); 
+      $('#nav_sketches').removeClass('scrollPosition');
+      $('#nav_prototyping').removeClass('scrollPosition');
+    }   
+    else if(isScrolledIntoView($('#prototyping')))
+    {
+      $('#nav_prototyping').addClass('scrollPosition'); 
+      $('#nav_wireframes').removeClass('scrollPosition');
+      $('#nav_userTesting').removeClass('scrollPosition');
+    }   
+    else if(isScrolledIntoView($('#userTesting')))
+    {
+      $('#nav_userTesting').addClass('scrollPosition'); 
+      $('#nav_prototyping').removeClass('scrollPosition');
+      $('#nav_research').removeClass('scrollPosition');
+    }  
+    else if(isScrolledIntoView($('#refinement')))
+    {
+      $('#nav_refinement').addClass('scrollPosition'); 
+      $('#nav_userTesting').removeClass('scrollPosition');
+    }    
+
+});
