@@ -70,7 +70,9 @@ p {
         border-right: 1px solid #d3d3d3;
         width: 12vw;
         left: 4.2vw;
-        padding-bottom: 4vh;
+        padding-top: 10.5vh;
+        padding-bottom: 45vh;
+        margin-top: -1px;
 /*    position: relative;
 */
 }
@@ -94,9 +96,20 @@ p {
 .guidingPrinciples{
     position: relative;
     display: block;
-    width: 40vw;
+    width: 50vw;
     margin: 3vw 8vw;
     
+}
+
+@media(max-width: 945px){
+    .h2big{
+        font-size: 1em;
+    }
+    #status{
+        left: 0px;
+        width: 135px;
+    }
+
 }
 
 .content_process{
@@ -120,7 +133,7 @@ p {
 .principles_h3{
     position: relative;
     display: inline-block;
-    width: 20vw;
+    width: 40vw;
     margin: 0px;
     padding: 0px;
     margin-top: 3.5vw;
@@ -128,7 +141,8 @@ p {
 }
 .imageJourner, .imageWireframe1, .imageWireframe2, .imageWireframe3, .imageWireframe4
 , .imageWireframe5, .imageWireframe6, .imageWireframe7, .imageWireframe8, .imageWireframe9, .imageWireframe10, 
-.imagePrototyping1, .imagePrototyping2, .imagePrototyping3, .imagePrototyping4, .imagePrototyping5{
+.imagePrototyping1, .imagePrototyping2, .imagePrototyping3, .imagePrototyping4, .imagePrototyping5,
+.imageRedesign1, .imageRedesign2, .imageRedesign3, .imageRedesign4, .imageRedesign5{
     width: 60vw;
     height: 40vw; 
     background-size: 100% 100%;
@@ -182,6 +196,22 @@ p {
 .imagePrototyping5{
     background-image: url('../images/prototypes/prototype_receipts.png');
 }
+.imageRedesign1{
+    background-image: url('../images/redesign/redesign_hierarchy.png');
+}
+.imageRedesign2{
+    background-image: url('../images/redesign/redesign_sharecode.png');
+}
+.imageRedesign3{
+    background-image: url('../images/redesign/redesign_loading.png');
+}
+.imageRedesign4{
+    background-image: url('../images/redesign/redesign_paid.png');
+}
+.imageRedesign5{
+    background-image: url('../images/redesign/redesign_feedback.png');
+}
+
 .imageSketches{
     width: 60vw;
     height: 60vw;
