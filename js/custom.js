@@ -36,14 +36,23 @@ $(document).ready(function() {
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 460) {
+      if (($(window).scrollTop() > 460)){
+
+    // if (($(window).scrollTop() > 460) && ($(window).width < 460)){
       $('#status').addClass('navbar-fixed');
       $('#status').removeClass('navbar-relative');
     }
-    if ($(window).scrollTop() < 461) {
+    if (($(window).scrollTop() < 461)) {
+
+    // if (($(window).scrollTop() < 461) && ($(window).width < 460) ) {
       $('#status').removeClass('navbar-fixed');
       $('#status').addClass('navbar-relative');
 
+    }
+    if($(window).width < 460){
+      $('#status').removeClass('navbar-fixed');
+
+      $('#status').addClass('navbar-relative');
     }
   });
 });

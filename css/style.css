@@ -101,31 +101,9 @@ p {
     
 }
 
-@media(max-width: 945px){
-    .h2big{
-        font-size: 1em;
-    }
-    #status{
-        left: 0px;
-        width: 135px;
-    }
 
-}
 
-.content_process{
-    margin: 0px;
 
-    width: 67vw;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5vh;
-/*    border: 1px solid #eeeeee;
-*/    
-    /*height: 80vh;*/
-    left: 20vw;
-    margin-left: 0px;
-    padding: 0px;
-}
 #research{
         margin-top: 5vh;
 
@@ -220,23 +198,37 @@ p {
     background-image: url('../images/sketches.jpg');
     background-size: 100% 100%;
 }
-.iconSecurity, .iconTolerance, .iconFeedback, .iconProgression{
+.iconSecurity, .iconTolerance, .iconFeedback, .iconProgression, .iconUsers, .iconMethods, .iconIssues{
     margin-top: 2em;
     position: relative;
     display: inline-block;
     width: 5vw;
     height: 5vw;
     background-color: black;
+    background-size: 100% 100%;
+}
+.iconSecurity{
+    background-image: url('../images/icons/iconSecurity.png');
+}
+.iconTolerance{
+    background-image: url('../images/icons/iconTolerance.png');
+}
+.iconFeedback{
+    background-image: url('../images/icons/iconFeedback.png');
+}
+.iconProgression{
+    background-image: url('../images/icons/iconProgression.png');
+}
+.iconUsers{
+    background-image: url('../images/icons/iconUsers.png');
+}
+.iconMethods{
+    background-image: url('../images/icons/iconMethods.png');
+}
+.iconIssues{
+    background-image: url('../images/icons/iconIssues.png');
 }
 
-.col2{
-    position: relative;
-    display: inline-block;
-    width: 29vw;
-    height: 30vh;
-    vertical-align: top;
-    margin: 2vw;
-}
 .row {
     padding: 0 80px;
 }
@@ -248,12 +240,109 @@ p {
     margin: 0px;
     margin-bottom: 1em;
 }
-.h2big{
-    padding-top: 0px;
-    margin-top: 0px;
-    font-size: 5em;
-    margin-left: 2vw;
+.content_process{
+    margin: 0px;
+
+    width: 67vw;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5vh;
+/*    border: 1px solid #eeeeee;
+*/    
+    /*height: 80vh;*/
+    left: 20vw;
+    margin-left: 0px;
+    padding: 0px;
 }
+@media(max-width: 750px){
+    .content_process{
+        left: 175px;
+    }
+}
+@media(max-width: 560px){
+    .content_process{
+        width: 60vw;
+    }
+}
+@media(max-width: 460px){
+    #status{
+/*        position: relative;
+        display: block;
+        width: 100vw;*/
+        position: absolute;
+        border: none;
+    }
+    .navbar-relative, .navbar-fixed{
+        position: absolute;
+        top: 100vh;
+        color: white;
+        z-index: 0;
+
+
+    }
+    .content_process{
+        width: 90%;
+        left: 5%;
+    }
+    .imageJourner, .imageWireframe1, .imageWireframe2, .imageWireframe3, .imageWireframe4
+, .imageWireframe5, .imageWireframe6, .imageWireframe7, .imageWireframe8, .imageWireframe9, .imageWireframe10, 
+.imagePrototyping1, .imagePrototyping2, .imagePrototyping3, .imagePrototyping4, .imagePrototyping5,
+.imageRedesign1, .imageRedesign2, .imageRedesign3, .imageRedesign4, .imageRedesign5{
+    width: 100%;
+    height: 60vw;
+
+}
+
+@media(min-width: 946px){
+    .h2big{
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 5em;
+        margin-left: 2vw;
+    }
+    .col2{
+        margin: 2vw;
+        height: 30vh;
+        position: relative;
+        display: inline-block;
+        width: 29vw;
+        vertical-align: top;
+
+
+    }
+    .guidingPrinciples{
+        position: relative;
+        display: block;
+        width: 50vw;
+        margin: 3vw 8vw;
+    }
+}
+@media(max-width: 945px){
+    .h2big{
+        font-size: 3em;
+        padding-top: 0px;
+    }
+    #status{
+        left: 0px;
+        width: 135px;
+    }
+    .col2{
+        margin-left: 0px;
+
+    }
+    .guidingPrinciples{
+        position: relative;
+        display: block;
+        width: 50vw;
+        margin: 0vw 0vw;
+    }
+    .iconSecurity, .iconTolerance, .iconFeedback, .iconProgression, .iconUsers, .iconMethods, .iconIssues{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
 
 .no-gutter > [class*='col-'] {
     padding-right:0;
