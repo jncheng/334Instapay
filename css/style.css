@@ -54,21 +54,25 @@ p {
     background-color: #22bab2;
 
     background-image: url('../images/processHeader-background.jpg');
-    background-size: 100% 100%;
+    background-color: #eeeeee;
+    background-size: 100% auto;
+    background-position: center center;
+    opacity: 0.5;
 }
     .processHeaderCopy {
         color: #000;
         text-align: center;
         padding-top: 110px;
+
         width: 50%;
         margin: 0 auto;
     }
-    .processHeaderCopy h1 {
-        color: #000;
+    #processHeader h1{
+        color: #000000;
     }
 
 #status{
-        border-right: 1px solid #d3d3d3;
+        border-right: 1px solid #eeeeee;
         width: 12vw;
         left: 4.2vw;
         padding-top: 10.5vh;
@@ -452,36 +456,11 @@ p {
 }
     .headerCopy {
         text-align: center;
-        padding-top: 110px;
+        padding-top: 220px;
         width: 50%;
         margin: 0 auto;
+        color: #000000;
     }
-
-#mainHeader {
-    background-color: #22bab2;
-    background-image: url('../images/cityscape-background.jpg');
-}
-    .mainHeaderCopy {
-        color: #ffffff;
-        text-align: center;
-        padding-top: 110px;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .mainHeaderCopy h1 {
-        color: #ffffff;
-    }
-
-#features {
-    text-align: center;
-    padding-top: 120px;
-}
-    #features h2 {
-        font-family: 'ProximaNova-Reg';
-        padding: 0;
-    }
-
-
 
 /*
 @media (min-height: 900px ) { 
