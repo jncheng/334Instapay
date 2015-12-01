@@ -71,61 +71,67 @@ function isScrolledIntoView(elem)
     var $elem = $(elem);
     var $window = $(window);
 
-    var docViewTop = $window.scrollTop();
+    var docViewTop = $window.scrollTop() + 200;
     var docViewBottom = docViewTop + $window.height();
 
     var elemTop = $elem.offset().top;
     var elemBottom = elemTop + $elem.height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    return ((elemBottom <= docViewTop) && (elemTop <= docViewTop));
 }
+
 $(window).scroll(function() {    
+
     if(isScrolledIntoView($('#research')))
     {
-      $('#nav_designGuide').removeClass('scrollPosition');
-      $('#nav_research').addClass('scrollPosition'); 
-    }   
+      $('#nav_designGuide').addClass('scrollPosition');
+      $('#nav_research').removeClass('scrollPosition'); 
+      $('#nav_userFlow').removeClass('scrollPosition'); 
+
+    }      else{
+      $('#nav_research').addClass('scrollPosition');
+      $('#nav_designGuide').removeClass('scrollPosition'); 
+
+    } 
+
     if(isScrolledIntoView($('#designGuide')))
     {
-      $('#nav_designGuide').addClass('scrollPosition'); 
-      $('#nav_research').removeClass('scrollPosition');
-      $('#nav_userFlow').removeClass('scrollPosition');
+      $('#nav_designGuide').removeClass('scrollPosition'); 
+      $('#nav_sketches').removeClass('scrollPosition');
+      $('#nav_userFlow').addClass('scrollPosition');
 
     }   
     if(isScrolledIntoView($('#userFlow')))
     {
-      $('#nav_userFlow').addClass('scrollPosition'); 
-      $('#nav_designGuide').removeClass('scrollPosition');
-      $('#nav_sketches').removeClass('scrollPosition');
+      $('#nav_userFlow').removeClass('scrollPosition'); 
+      $('#nav_wireframes').removeClass('scrollPosition');
+      $('#nav_sketches').addClass('scrollPosition');
     }   
     if(isScrolledIntoView($('#sketches')))
     {
-      $('#nav_sketches').addClass('scrollPosition'); 
-      $('#nav_userFlow').removeClass('scrollPosition');
-      $('#nav_wireframes').removeClass('scrollPosition');
+      $('#nav_sketches').removeClass('scrollPosition'); 
+      $('#nav_prototyping').removeClass('scrollPosition');
+      $('#nav_wireframes').addClass('scrollPosition');
     }   
     if(isScrolledIntoView($('#wireframes')))
     {
-      $('#nav_wireframes').addClass('scrollPosition'); 
-      $('#nav_sketches').removeClass('scrollPosition');
-      $('#nav_prototyping').removeClass('scrollPosition');
+      $('#nav_wireframes').removeClass('scrollPosition'); 
+      $('#nav_userTesting').removeClass('scrollPosition');
+      $('#nav_prototyping').addClass('scrollPosition');
     }   
     if(isScrolledIntoView($('#prototyping')))
     {
-      $('#nav_prototyping').addClass('scrollPosition'); 
-      $('#nav_wireframes').removeClass('scrollPosition');
-      $('#nav_userTesting').removeClass('scrollPosition');
+      $('#nav_prototyping').removeClass('scrollPosition'); 
+      $('#nav_refinement').removeClass('scrollPosition');
+      $('#nav_userTesting').addClass('scrollPosition');
     }   
     if(isScrolledIntoView($('#userTesting')))
     {
-      $('#nav_userTesting').addClass('scrollPosition'); 
+      $('#nav_userTesting').removeClass('scrollPosition'); 
       $('#nav_prototyping').removeClass('scrollPosition');
-      $('#nav_research').removeClass('scrollPosition');
+      $('#nav_refinement').addClass('scrollPosition');
     }  
-    if(isScrolledIntoView($('#refinement')))
-    {
-      $('#nav_refinement').addClass('scrollPosition'); 
-      $('#nav_userTesting').removeClass('scrollPosition');
-    }    
+
+
 
 });
