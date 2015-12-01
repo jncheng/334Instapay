@@ -117,7 +117,8 @@ p {
     margin-top: 3.5vw;
     vertical-align: top;
 }
-.imageJourner, .imageWireframe1, .imageWireframe2, .imageWireframe3, .imageWireframe4
+.imageUserJourney, .imageStyleGuide,
+.imageWireframe1, .imageWireframe2, .imageWireframe3, .imageWireframe4
 , .imageWireframe5, .imageWireframe6, .imageWireframe7, .imageWireframe8, .imageWireframe9, .imageWireframe10, 
 .imagePrototyping1, .imagePrototyping2, .imagePrototyping3, .imagePrototyping4, .imagePrototyping5,
 .imageRedesign1, .imageRedesign2, .imageRedesign3, .imageRedesign4, .imageRedesign5{
@@ -126,8 +127,12 @@ p {
     background-size: 100% 100%;
 
 }
-.imageJourney{
-    background-image: url('../images/userJourneyD1-02.png');
+.imageUserJourney{
+    background-image: url('../images/process/userJourneyD1.png');
+}
+.imageStyleGuide{
+    background-image: url('../images/process/styleguide.png');
+
 }
 .imageWireframe1{
     background-image: url('../images/wireframes/wireframe_createaccount.png');
