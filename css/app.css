@@ -180,6 +180,35 @@ a:hover {
         padding: 0;
     }
 
+#checkInBackground {
+    background-image: url('../images/checkIn-background.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#viewOrderBackground {
+    background-image: url('../images/vieworder-background.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+#splitBillsBackground {
+    background-image: url('../images/splitbill-background.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#easyPaymentBackground {
+    background-image: url('../images/easypay-background.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+#exportReceiptsBackground {
+    background-image: url('../images/exportreceipts-background.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
 
 #download {
     font-family: 'CoreCircus-Reg';
