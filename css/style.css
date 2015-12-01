@@ -80,7 +80,6 @@ p {
     top: 10vh;
     z-index: 100;
     position: fixed;
-    width: 100%;
 }
 .navbar-relative{
     position: absolute;
@@ -91,6 +90,7 @@ p {
     padding: 0px;
     margin-bottom: 0px;
     font-size: 1em;
+    
 }
 
 .guidingPrinciples{
@@ -105,7 +105,7 @@ p {
 
 
 #research{
-        margin-top: 5vh;
+        margin-top: 6vh;
 
 }
 .principles_h3{
@@ -236,6 +236,17 @@ p {
 .row {
     padding: 0 80px;
 }
+.leftNav, .leftNav:visited {
+    text-decoration: none;
+    color: #8e8e8e;
+}
+.leftNav:hover{
+    text-decoration: none;
+    color: #22bab2;
+}
+
+
+
 .process_header{
     position: relative;
     display: inline-block;
@@ -336,7 +347,8 @@ p {
         padding-top: 0px;
     }
     #status{
-        left: 0px;
+
+        left: 20px;
         width: 135px;
     }
     .col2{
