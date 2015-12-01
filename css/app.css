@@ -1,0 +1,291 @@
+
+/* Global Styles */
+
+/* Fonts */
+@font-face {
+    font-family: 'ProximaNova-Reg';
+    src: url('../fonts/ProximaNova-Reg.ttf');
+}
+    @font-face {
+        font-family: 'ProximaNova-Light';
+        src: url('../fonts/ProximaNova-Light.ttf');
+        font-weight: 700;
+    }
+
+@font-face {
+    font-family: 'CoreCircus-Reg';
+    src: url('../fonts/CoreCircus-Reg.ttf');
+    letter-spacing: 0px;
+}
+
+html, body {
+	font-family: 'ProximaNova-Reg';
+    letter-spacing: 0.5px;
+    color: #8e8e8e;
+}
+
+section {
+    margin: 80px 0;
+}
+
+
+/* Text */
+h1 {
+    font-family: 'CoreCircus-Reg';
+    font-size: 2em;
+    color: #6e6f71;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'CoreCircus-Reg';
+    font-size: 1.5em;
+    color: #22bab2;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding-bottom: 10px
+}
+
+
+/* Rows */
+.row {
+    padding: 0 80px;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+/* Hyperlinks */
+
+a {
+    color: #6e6f71;
+}
+
+a:focus {
+    color: #22bab2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #22bab2;
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-primary {
+    font-size: 0.8em;
+    color: #ffffff;
+    background-color: #22bab2;
+    border: 2px solid #22bab2;
+    border-radius: 25px;
+    padding: 14px 25px 13px;
+}
+    .btn-primary:hover,
+    .btn-primary:focus {
+      font-size: 0.8em;
+        color: #22bab2;
+        background-color: #ffffff;
+        border: 2px solid #22bab2;
+        border-radius: 25px;
+        padding: 14px 25px 13px;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+
+/* Images */
+.img-responsive {
+        margin: 0 auto;
+    }
+
+/* Navbar */
+.navbar-default {
+    background-color: #ffffff;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border: 0;
+    transition-duration: 0.5s;
+}
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        font-family: 'CoreCircus-Reg';
+        color: #22bab2;
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #22bab2;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #6e6f71;
+    }
+
+/* Header Section */
+.header {
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 0;
+}
+    .headerCopy {
+        text-align: center;
+        padding-top: 110px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .headerCopy h2 {
+        padding: 50px 0 10px;
+    }
+
+
+/* index.html Styles */
+.consumer h2 {
+    padding: 80px 0 0;
+}
+
+#mainHeader {
+    background-color: #22bab2;
+    background-image: url('../images/cityscape-background.jpg');
+}
+    .mainHeaderCopy {
+        color: #ffffff;
+        text-align: center;
+        padding-top: 110px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .mainHeaderCopy h1 {
+        color: #ffffff;
+    }
+
+#features {
+    text-align: center;
+    padding-top: 120px;
+}
+    #features h1 {
+        padding-bottom: 40px;
+    }
+    #features h2 {
+        font-family: 'ProximaNova-Reg';
+        padding: 0;
+    }
+
+
+#download {
+    font-family: 'CoreCircus-Reg';
+    font-size: 1.1em;
+    text-align: center;
+    color: #6e6f71;
+    background-image: url('../images/cityscape-background2.jpg');
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: 160px 0 0;
+}
+    #download a {
+        font-family: 'ProximaNova-Reg';
+    }
+
+/* process.html Styles */
+.navbar-side {
+    font-size: 0.9em;
+    border-right: 1px solid #eeeeee;
+    height: 80vh;
+}
+    @media screen and (max-width: 990px) {
+        .navbar-side {
+            display: none;
+        }
+    }
+
+#processHeader {
+    background-color: #22bab2;
+    background-image: url('');
+}
+    .processHeaderCopy {
+        color: #000;
+        text-align: center;
+        padding-top: 110px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .processHeaderCopy h1 {
+        color: #000;
+    }
+
+#processContent {
+    padding-left: 60px;
+}
+
+.processStage {
+    padding: 0 0 80px;
+}
+
+
+/* restaurant */
+
+.restaurant h2{
+    text-align: center;
+}
+
+#restaurantHeader {
+    background-color: #22bab2;
+    background-image: url('../images/cityscape-background.jpg');
+    color: #ffffff;
+}
+    .restaurantHeaderCopy h1 {
+        color: #ffffff;
+    }
+
+/* Footer */
+footer {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    padding: 20px 0 40px;
+}
+    footer .row,
+    footer .credits,
+    footer .credits ul,
+    footer p {
+        margin: 0;
+        padding: 0;
+    }
+    footer .credits li {
+        float:right;
+        color: #22bab2;
+        display: inline;
+        padding: 0 15px 0 0;
+    }
+    @media screen and (max-width: 736px) {
+        #download {
+            background-image: url('../images/cityscape-background2.jpg');
+            background-size: contain;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            height: 200px;
+            margin: 100px 0 0;
+        }
+
+        footer {
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px 0 40px;
+        }
+        footer .credits li {
+        float: none;
+    }
+        footer p {
+            padding-bottom: 10px;
+        }
+}
